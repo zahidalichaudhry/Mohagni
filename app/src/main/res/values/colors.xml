@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b49f53</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#b49f53</color>
+
+    <color name="lightGray">#fcfbfb</color>
+    <color name="tranpblack">#b5000000</color>
+    <color name="colorwhite">#ffff</color>
+    <color name="greytrans">#bd363535</color>
+    <color name="jaqard">#b5a053</color>
+    <color name="white">#FFFFFF</color>
+    <color name="monsoon">#777777</color>
+    <color name="tabcolor">#434343</color>
+    <color name="jumbo">#26242d</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#b9b9b9</color>
+    <color name="iron">#cccccc</color>
+    <color name="greyshade">#DFDFDF</color>
+    <color name="transparent">#00000000</color>
+    <color name="default_green">#aed60d</color>
+    <color name="backgroundcolor">#efefef</color>
+    <color name="warning">#FFCC00</color>
+    <color name="black">#000000</color>
+    <color name="textactive">#f6921e</color>
+    <color name="textinactive">#828283</color>
+    <color name="grey">#828283</color>
+    <color name="yellow">#ff8c00</color>
+    <color name="ransblack">#ac020202</color>
+    <color name="transblack">#b1020202</color>
+    <color name="wed_back_black">#b1020202</color>
+    <color name="LightGrey">#E6E6FA</color>
+    <color name="green">#a7e609</color>
+    <color name="red">#e60935</color>
+    <color name="brow_j">#b5a053</color>
+    <color name="Mohagni_back">#4c4c4c</color>
+</resources>

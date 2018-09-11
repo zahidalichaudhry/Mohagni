@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itpvt.mohagni">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/timkan2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/timkan2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.Home_Categories"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".Activities.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.Check_Out"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".Activities.All_Products"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.My_Cart"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Size_Chart"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Product_Details"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.FullScreenImage"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Activities.Sub_Categories"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
