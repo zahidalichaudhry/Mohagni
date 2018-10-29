@@ -1,6 +1,8 @@
 package com.itpvt.mohagni.Activities;
 
 import android.content.ComponentName;
+import android.content.ContentUris;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -59,7 +61,7 @@ public class Home_Categories extends AppCompatActivity implements NavigationView
             @Override
             public void onClick(View v) {
 //                Uri uri  =Uri.parse("smsto:"+"+923161433343");
-//                Intent intent =new Intent(Intent.ACTION_SENDTO,uri);
+//                Intent intent =newa Intent(Intent.ACTION_SENDTO,uri);
 //                intent.setPackage("com.whatsapp");
 //                startActivity(intent);
 
@@ -79,6 +81,23 @@ public class Home_Categories extends AppCompatActivity implements NavigationView
                 startActivity(intent);
             }
         });
+        FloatingActionButton facebook=(FloatingActionButton)findViewById(R.id.facebook);
+        facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Uri uri = Uri.parse("fb-messenger://user/");
+//                uri = ContentUris.withAppendedId(uri, Long.parseLong("rdtex2016"));
+//                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+
+//                Uri uri = Uri.parse("fb-messenger://user/");
+//
+//                uri = ContentUris.withAppendedId(uri,Long.valueOf("rdtex2016"));
+//                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+//                startActivity(intent);
+                Intent facebookIntent = openFacebook(Home_Categories.this);
+                startActivity(facebookIntent);
+            }
+        });
         viewPager = (ViewPager)findViewById(R.id.viewpager);
         setupViewPager(viewPager);
         tabLayout = (TabLayout)findViewById(R.id.tablayout);
@@ -87,7 +106,21 @@ public class Home_Categories extends AppCompatActivity implements NavigationView
 
 
     }
+    public static Intent openFacebook(Context context) {
 
+        try {
+            context.getPackageManager()
+                    .getPackageInfo("com.facebook.katana", 0);
+            return new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("fb://page/1725972814353758"));
+        } catch (Exception e){
+
+            return new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://www.facebook.com/rdtex2016/"));
+        }
+
+
+    }
     public void setupViewPager(ViewPager upViewPager) {
 
         Home_Pager_Adapter adapter = new Home_Pager_Adapter(getSupportFragmentManager());
@@ -127,10 +160,11 @@ public class Home_Categories extends AppCompatActivity implements NavigationView
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-        if (id == R.id.Categories)
+        if (id == R.id.new_ar)
         {
-
-
+            Intent intent=new Intent(Home_Categories.this,All_Products.class);
+            intent.putExtra("id","4");
+            startActivity(intent);
         } else if (id == R.id.Cart)
         {
 
@@ -153,6 +187,11 @@ public class Home_Categories extends AppCompatActivity implements NavigationView
             Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.mohagni.com/"));
             startActivity(myIntent);
 
+        }
+        else if (id == R.id.sale_a) {
+            Intent intent=new Intent(Home_Categories.this,All_Products.class);
+            intent.putExtra("id","88");
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

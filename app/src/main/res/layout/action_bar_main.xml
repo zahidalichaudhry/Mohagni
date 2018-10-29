@@ -7,83 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".Activities.Home_Categories">
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/cardView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:theme="@style/ToolbarStyle">
-
-            <android.support.constraint.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="left"
-                    android:layout_margin="5dp"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
-                    android:fontFamily="@font/gotham_book"
-                    android:gravity="center"
-                    android:text="Mohagni"
-                    android:textColor="@color/Mohagni_back"
-                    android:textSize="22sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-
-                <!--<ImageView-->
-                <!--android:id="@+id/whatsapp"-->
-                <!--android:layout_width="40dp"-->
-                <!--android:layout_height="40dp"-->
-                <!--android:layout_gravity="right"-->
-                <!--android:layout_marginBottom="8dp"-->
-                <!--android:layout_marginEnd="8dp"-->
-                <!--android:layout_marginTop="8dp"-->
-                <!--android:background="@drawable/whatsapp"-->
-                <!--app:layout_constraintBottom_toBottomOf="parent"-->
-                <!--app:layout_constraintEnd_toEndOf="parent"-->
-                <!--app:layout_constraintTop_toTopOf="parent" />-->
-
-                <!--<ImageView-->
-                <!--android:id="@+id/bag"-->
-                <!--android:layout_width="40dp"-->
-                <!--android:layout_height="40dp"-->
-                <!--android:layout_gravity="right"-->
-                <!--android:layout_marginBottom="8dp"-->
-                <!--android:layout_marginEnd="8dp"-->
-                <!--android:layout_marginTop="8dp"-->
-                <!--android:background="@drawable/cart"-->
-                <!--app:layout_constraintBottom_toBottomOf="parent"-->
-                <!--app:layout_constraintEnd_toStartOf="@+id/whatsapp"-->
-                <!--app:layout_constraintTop_toTopOf="parent" />-->
-            </android.support.constraint.ConstraintLayout>
-
-
-        </android.support.v7.widget.Toolbar>
-    </android.support.v7.widget.CardView>
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appBarLayout"
@@ -91,9 +15,84 @@
         android:layout_height="103dp"
         android:background="@color/white"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <include layout="@layout/action_bar" />
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:background="@color/white"
+                app:theme="@style/ToolbarStyle">
 
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left"
+                        android:layout_margin="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/gotham_book"
+                        android:gravity="center"
+                        android:text="MOHAGNI"
+                        android:textColor="@color/Mohagni_back"
+                        android:textSize="22sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/whatsapp"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:layout_marginBottom="8dp"-->
+                    <!--android:layout_marginEnd="8dp"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:background="@drawable/whatsapp"-->
+                    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--app:layout_constraintEnd_toEndOf="parent"-->
+                    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/bag"-->
+                    <!--android:layout_width="40dp"-->
+                    <!--android:layout_height="40dp"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:layout_marginBottom="8dp"-->
+                    <!--android:layout_marginEnd="8dp"-->
+                    <!--android:layout_marginTop="8dp"-->
+                    <!--android:background="@drawable/cart"-->
+                    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                    <!--app:layout_constraintEnd_toStartOf="@+id/whatsapp"-->
+                    <!--app:layout_constraintTop_toTopOf="parent" />-->
+                </android.support.constraint.ConstraintLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.v7.widget.CardView>
         <android.support.design.widget.TabLayout
             android:id="@+id/tablayout"
             android:layout_width="match_parent"
@@ -139,4 +138,18 @@
         android:src="@drawable/whatsapp"
         app:layout_anchor="@+id/viewpager"
         app:layout_anchorGravity="right|bottom" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/facebook"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        app:backgroundTint="@color/white"
+        app:layout_anchor="@+id/viewpager"
+        app:layout_anchorGravity="left|bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/onlyf" />
 </android.support.design.widget.CoordinatorLayout>

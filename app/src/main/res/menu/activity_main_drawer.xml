@@ -9,15 +9,27 @@
             <!--android:id="@+id/Store"-->
             <!--android:icon="@drawable/store"-->
             <!--android:title="Store" />-->
+        <!--<item-->
+            <!--android:id="@+id/Categories"-->
+            <!--android:fontFamily="@font/gotham_book"-->
+            <!--android:icon="@drawable/cat"-->
+            <!--android:title="Categories" />-->
         <item
-            android:id="@+id/Categories"
+            android:id="@+id/new_ar"
             android:fontFamily="@font/gotham_book"
-            android:icon="@drawable/cat"
-            android:title="Categories" />
+            android:icon="@drawable/newa"
+            android:title="New Arrival" />
+        <item
+            android:id="@+id/sale_a"
+            android:fontFamily="@font/gotham_book"
+            android:icon="@drawable/sale2"
+            android:title="Sale"/>
         <item
             android:id="@+id/Cart"
             android:fontFamily="@font/gotham_book"
             android:icon="@drawable/cart"
+            android:title="My Cart" />
+
             android:title="My Cart" />
         <item
             android:id="@+id/web"

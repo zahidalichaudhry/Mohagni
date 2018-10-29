@@ -95,7 +95,7 @@ public class Product_Details extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //                Uri uri  =Uri.parse("smsto:"+"+923161433343");
-//                Intent intent =new Intent(Intent.ACTION_SENDTO,uri);
+//                Intent intent =newa Intent(Intent.ACTION_SENDTO,uri);
 //                intent.setPackage("com.whatsapp");
 //                startActivity(intent);
 
@@ -145,10 +145,10 @@ public class Product_Details extends AppCompatActivity {
                 }
             }
         });
-//        sizechart.setOnClickListener(new View.OnClickListener() {
+//        sizechart.setOnClickListener(newa View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//                Intent i = new Intent(Product_Details.this, Size_Chart.class);
+//                Intent i = newa Intent(Product_Details.this, Size_Chart.class);
 //                startActivity( i);
 //
 //

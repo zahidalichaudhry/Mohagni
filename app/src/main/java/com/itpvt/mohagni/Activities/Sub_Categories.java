@@ -77,7 +77,7 @@ public class Sub_Categories extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //                Uri uri=Uri.parse("smsto:"+"+923111101102");
-//                Intent i =new Intent(Intent.ACTION_SENDTO,uri);
+//                Intent i =newa Intent(Intent.ACTION_SENDTO,uri);
 //                i.setPackage("com.whatsapp");
 //                startActivity(i);
 
@@ -115,7 +115,7 @@ public class Sub_Categories extends AppCompatActivity {
                 if (data==null)
                 {
                     Intent intent=new Intent(Sub_Categories.this,All_Products.class);
-//                    Intent intent=new Intent(Sub_Categories.this,Web_View.class);
+//                    Intent intent=newa Intent(Sub_Categories.this,Web_View.class);
 //                    intent.putExtra("weburl",WEB_URL);
                     intent.putExtra("id",id);
                     startActivity(intent);

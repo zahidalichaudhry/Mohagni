@@ -51,7 +51,7 @@ public class FullScreenImage extends AppCompatActivity {
         viewPager=(ViewPager)findViewById(R.id.view_pager);
 //        Glide.with(FullScreenImage.this).load(URl).into(fullImage);
         loading = ProgressDialog.show(FullScreenImage.this,"Loading...","Please wait...",false,false);
-//        scaleGestureDetector = new ScaleGestureDetector(this,new ScaleListener());
+//        scaleGestureDetector = newa ScaleGestureDetector(this,newa ScaleListener());
         StringRequest request = new StringRequest(Request.Method.POST, Config.URL_REMOVE_HD_IMAGE, new com.android.volley.Response.Listener<String>() {
             @Override
             public void onResponse(String response) {

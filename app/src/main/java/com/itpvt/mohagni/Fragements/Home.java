@@ -130,18 +130,18 @@ public class Home extends Fragment implements BaseSliderView.OnSliderClickListen
 //        Glide.with(this).load(bajiImage).into(sale);
         GetAllProducts();
         GetAllProducts2();
-//        sale.setOnClickListener(new View.OnClickListener() {
+//        sale.setOnClickListener(newa View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//                Intent intent=new Intent(getActivity(),All_Products.class);
+//                Intent intent=newa Intent(getActivity(),All_Products.class);
 //                intent.putExtra("id","5");
 //                startActivity(intent);
 //            }
 //        });
-//        New.setOnClickListener(new View.OnClickListener() {
+//        New.setOnClickListener(newa View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {//60
-//                Intent intent=new Intent(getActivity(),All_Products.class);
+//                Intent intent=newa Intent(getActivity(),All_Products.class);
 //                intent.putExtra("id","6");
 //                startActivity(intent);
 //            }
@@ -180,11 +180,11 @@ public class Home extends Fragment implements BaseSliderView.OnSliderClickListen
 
                     }
 
-//                        do {JSONObject data = new getJSONObject.JSONObject("abc");
+//                        do {JSONObject data = newa getJSONObject.JSONObject("abc");
 //                            String num= String.valueOf(i);
 //                            obj_level1=data.getJSONObject(num);
 //
-//                            arrayList.add(new All_product_pojo(obj_level1.getString("product_id"),obj_level1.getString("pro_name")
+//                            arrayList.add(newa All_product_pojo(obj_level1.getString("product_id"),obj_level1.getString("pro_name")
 //                                    ,obj_level1.getString("img_url")));
 //                            i++;
 //
@@ -315,11 +315,11 @@ public class Home extends Fragment implements BaseSliderView.OnSliderClickListen
 
                     }
 
-//                        do {JSONObject data = new getJSONObject.JSONObject("abc");
+//                        do {JSONObject data = newa getJSONObject.JSONObject("abc");
 //                            String num= String.valueOf(i);
 //                            obj_level1=data.getJSONObject(num);
 //
-//                            arrayList.add(new All_product_pojo(obj_level1.getString("product_id"),obj_level1.getString("pro_name")
+//                            arrayList.add(newa All_product_pojo(obj_level1.getString("product_id"),obj_level1.getString("pro_name")
 //                                    ,obj_level1.getString("img_url")));
 //                            i++;
 //

@@ -71,11 +71,12 @@ public class All_Products extends AppCompatActivity {
         recyclerView=(RecyclerView)findViewById(R.id.model_recyclerView);
         layoutManager=new GridLayoutManager(this,2);
         recyclerView.setLayoutManager(layoutManager);
-//        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.setNestedScrollingEnabled(false);
+//        recyclerView.setItemAnimator(newa DefaultItemAnimator());
         recyclerView.setHasFixedSize(true);
 
 //        recyclerView.getViewTreeObserver().addOnGlobalLayoutListener(
-//                new ViewTreeObserver.OnGlobalLayoutListener() {
+//                newa ViewTreeObserver.OnGlobalLayoutListener() {
 //                    @Override
 //                    public void onGlobalLayout() {
 //                        recyclerView.getViewTreeObserver().removeOnGLobalLayoutListener(this);
@@ -99,11 +100,11 @@ public class All_Products extends AppCompatActivity {
                     sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators(smsNumber) + "@s.whatsapp.net");//phone number without "+" prefix
                     startActivity(sendIntent);
 ////                Uri uri  =Uri.parse("smsto:"+"+923161433343");
-////                Intent intent =new Intent(Intent.ACTION_SENDTO,uri);
+////                Intent intent =newa Intent(Intent.ACTION_SENDTO,uri);
 ////                intent.setPackage("com.whatsapp");
 ////                startActivity(intent);
 //                Uri mUri = Uri.parse("smsto:92316143343");
-//                Intent mIntent = new Intent(Intent.ACTION_SENDTO, mUri);
+//                Intent mIntent = newa Intent(Intent.ACTION_SENDTO, mUri);
 //                mIntent.setPackage("com.whatsapp");
 ////                mIntent.putExtra("sms_body", "The text goes here");
 //                mIntent.putExtra("chat",true);

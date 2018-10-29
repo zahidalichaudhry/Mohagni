@@ -102,4 +102,16 @@
         app:layout_anchorGravity="right|bottom"
         app:layout_constraintBottom_toTopOf="@+id/g_price"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/facebook"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/onlyf" />
 </android.support.constraint.ConstraintLayout>
