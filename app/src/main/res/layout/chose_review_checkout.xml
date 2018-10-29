@@ -15,7 +15,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:fontFamily="@font/gotham_book"
-        android:background="@color/Mohagni_back"
+        android:background="@drawable/blackborder"
         android:textColor="@color/white"
         android:layout_height="wrap_content" />
     <Button
@@ -27,7 +27,7 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:id="@+id/chek"
-        android:background="@color/jaqard"
+        android:background="@drawable/buttonbrown"
         android:textColor="@color/white"
         android:layout_height="wrap_content" />
 </LinearLayout>

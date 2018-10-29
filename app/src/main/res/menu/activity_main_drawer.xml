@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <!--<item-->
+            <!--android:id="@+id/Store"-->
+            <!--android:icon="@drawable/store"-->
+            <!--android:title="Store" />-->
+        <item
+            android:id="@+id/Categories"
+            android:fontFamily="@font/gotham_book"
+            android:icon="@drawable/cat"
+            android:title="Categories" />
+        <item
+            android:id="@+id/Cart"
+            android:fontFamily="@font/gotham_book"
+            android:icon="@drawable/cart"
+            android:title="My Cart" />
+        <item
+            android:id="@+id/web"
+            android:icon="@drawable/web"
+            android:fontFamily="@font/gotham_book"
+            android:title="WebSite" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/Whatsapp"
+                android:icon="@drawable/whatsapp"
+                android:fontFamily="@font/gotham_book"
+                android:title="Whatsapp" />
+
+            <item
+                android:id="@+id/Innovators"
+                android:icon="@drawable/logo_inov"
+                android:fontFamily="@font/gotham_book"
+                android:title="INNOVATORS" />
+        </menu>
+    </item>
+
+</menu>

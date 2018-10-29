@@ -1,13 +1,16 @@
 package com.itpvt.mohagni.Activities;
 
 import android.app.ProgressDialog;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.telephony.PhoneNumberUtils;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -61,7 +64,7 @@ public class Sub_Categories extends AppCompatActivity {
                 onBackPressed();
             }
         });
-        ImageView bag=(ImageView)findViewById(R.id.bag);
+        FloatingActionButton bag=(FloatingActionButton)findViewById(R.id.bag);
         bag.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -69,14 +72,21 @@ public class Sub_Categories extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ImageView whatsapp=(ImageView)findViewById(R.id.whatsapp);
+        FloatingActionButton whatsapp=(FloatingActionButton)findViewById(R.id.whatsapp);
         whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri=Uri.parse("smsto:"+"+923111101102");
-                Intent i =new Intent(Intent.ACTION_SENDTO,uri);
-                i.setPackage("com.whatsapp");
-                startActivity(i);
+//                Uri uri=Uri.parse("smsto:"+"+923111101102");
+//                Intent i =new Intent(Intent.ACTION_SENDTO,uri);
+//                i.setPackage("com.whatsapp");
+//                startActivity(i);
+
+                String smsNumber = "92316143343";
+
+                Intent sendIntent = new Intent("android.intent.action.MAIN");
+                sendIntent.setComponent(new ComponentName("com.whatsapp", "com.whatsapp.Conversation"));
+                sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators(smsNumber) + "@s.whatsapp.net");//phone number without "+" prefix
+                startActivity(sendIntent);
             }
         });
         recyclerView=(RecyclerView)findViewById(R.id.model_recyclerView);

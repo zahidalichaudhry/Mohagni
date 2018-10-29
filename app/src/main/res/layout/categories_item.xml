@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:elevation="3dp"
+        android:layout_margin="5dp"
         android:padding="4dp">
 <LinearLayout
     android:layout_width="match_parent"
@@ -28,7 +29,7 @@
     <View
         android:layout_width="match_parent"
         android:background="@color/jaqard"
-        android:layout_height="5dp">
+        android:layout_height="2dp">
     </View>
 </LinearLayout>
 

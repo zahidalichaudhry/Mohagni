@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Mohagni</string>
-    <string name="num1"><u>1.NAME AND ADDRESS</u></string>
+    <string name="num1"><u>NAME AND ADDRESS</u></string>
     <string name="number">+923161433343</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Mohagni</string>
+    <string name="nav_header_subtitle">hajvery.whiterose@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 </resources>

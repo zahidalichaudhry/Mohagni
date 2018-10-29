@@ -1,61 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.itpvt.mohagni.Activities.My_Cart">
-    <include layout="@layout/action_bar">
-    </include>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <Button
-            android:layout_width="match_parent"
-            android:layout_margin="2dp"
-            android:layout_height="wrap_content"
-            android:text="Chek out"
-            android:id="@+id/chekout"
-            android:fontFamily="@font/gotham_book"
-            android:textColor="@color/white"
-            android:background="@color/brow_j"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <TextView
-                android:layout_width="120dp"
-                android:padding="2dp"
-                android:layout_height="50dp"
-                android:fontFamily="@font/gotham_book"
-                android:textSize="18sp"
-                android:gravity="center"
-                android:layout_margin="2dp"
-                android:background="@color/Mohagni_back"
-                android:textColor="@color/white"
-                android:text="Grand Total:"/>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="18sp"
-                android:gravity="center"
-                android:fontFamily="@font/gotham_book"
-                android:layout_margin="2dp"
-                android:background="@color/Mohagni_back"
-                android:textColor="@color/white"
-                android:id="@+id/g_price"
-                />
-        </LinearLayout>
+    tools:context="com.itpvt.mohagni.Activities.My_Cart"
+    tools:layout_editor_absoluteY="25dp">
 
-    </LinearLayout>
+    <include
+        android:id="@+id/include"
+        layout="@layout/action_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/chekout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/buttonbrown"
+        android:fontFamily="@font/gotham_book"
+        android:text="Chek out"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/blackborder"
+        android:fontFamily="@font/gotham_book"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="Grand Total:"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/chekout"
+        app:layout_constraintEnd_toStartOf="@+id/g_price"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/g_price"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/blackborder"
+        android:fontFamily="@font/gotham_book"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/chekout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5" />
+
+
     <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/model_recyclerView"
-        android:layout_marginTop="3dp"
-        android:layout_marginLeft="2dp"
-        android:scrollbars="vertical">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
     </android.support.v7.widget.RecyclerView>
-</LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/bag"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/cart"
+        app:backgroundTint="@color/white"
+        android:src="@drawable/cart"
+        app:layout_anchorGravity="left|bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/whatsapp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/whatsapp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/whatsapp"
+        app:layout_anchor="@+id/viewpager"
+        app:layout_anchorGravity="right|bottom"
+        app:layout_constraintBottom_toTopOf="@+id/g_price"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,14 +1,19 @@
 package com.itpvt.mohagni.Activities;
 
 import android.app.ProgressDialog;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.telephony.PhoneNumberUtils;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -64,20 +69,48 @@ public class All_Products extends AppCompatActivity {
             }
         });
         recyclerView=(RecyclerView)findViewById(R.id.model_recyclerView);
-        layoutManager=new GridLayoutManager(this,3);
+        layoutManager=new GridLayoutManager(this,2);
         recyclerView.setLayoutManager(layoutManager);
+//        recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setHasFixedSize(true);
-        ImageView whatsapp=(ImageView) findViewById(R.id.whatsapp);
+
+//        recyclerView.getViewTreeObserver().addOnGlobalLayoutListener(
+//                new ViewTreeObserver.OnGlobalLayoutListener() {
+//                    @Override
+//                    public void onGlobalLayout() {
+//                        recyclerView.getViewTreeObserver().removeOnGLobalLayoutListener(this);
+//                        int viewWidth = recyclerView.getMeasuredWidth();
+//                        float cardViewWidth = getActivity().getResources().getDimension(R.dimen.cardview_layout_width);
+//                        int newSpanCount = (int) Math.floor(viewWidth / cardViewWidth);
+//                        layoutManager.setSpanCount(newSpanCount);
+//                        layoutManager.requestLayout();
+//                    }
+//                });
+        FloatingActionButton whatsapp=(FloatingActionButton) findViewById(R.id.whatsapp);
         whatsapp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri  =Uri.parse("smsto:"+"+923161433343");
-                Intent intent =new Intent(Intent.ACTION_SENDTO,uri);
-                intent.setPackage("com.whatsapp");
-                startActivity(intent);
+
+
+                String smsNumber = "92316143343";
+
+                    Intent sendIntent = new Intent("android.intent.action.MAIN");
+                    sendIntent.setComponent(new ComponentName("com.whatsapp", "com.whatsapp.Conversation"));
+                    sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators(smsNumber) + "@s.whatsapp.net");//phone number without "+" prefix
+                    startActivity(sendIntent);
+////                Uri uri  =Uri.parse("smsto:"+"+923161433343");
+////                Intent intent =new Intent(Intent.ACTION_SENDTO,uri);
+////                intent.setPackage("com.whatsapp");
+////                startActivity(intent);
+//                Uri mUri = Uri.parse("smsto:92316143343");
+//                Intent mIntent = new Intent(Intent.ACTION_SENDTO, mUri);
+//                mIntent.setPackage("com.whatsapp");
+////                mIntent.putExtra("sms_body", "The text goes here");
+//                mIntent.putExtra("chat",true);
+//                startActivity(mIntent);
             }
         });
-        ImageView bag=(ImageView)findViewById(R.id.bag);
+        FloatingActionButton bag=(FloatingActionButton)findViewById(R.id.bag);
         bag.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

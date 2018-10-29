@@ -60,7 +60,7 @@ public class Home extends Fragment implements BaseSliderView.OnSliderClickListen
 
     String menimage,womenimage,saleimage,bajiImage;
     static String path1,path2;
-    ImageView men,women,sale,New;
+    ImageView men,women,chifon,arena,mohagni;
     TextView new_a,new_a2,new_tx,sale_tx;
     HashMap<String, String> HashMapForURL ;
     public Home() {
@@ -80,8 +80,11 @@ public class Home extends Fragment implements BaseSliderView.OnSliderClickListen
         path2=Config.BANNER3;
         saleimage=Config.HOMW_SALE;
         bajiImage  = Config.HOME_FOOTWARE;
-        sale=(ImageView)view.findViewById(R.id.img1);
-        New=(ImageView)view.findViewById(R.id.img2);
+//        sale=(ImageView)view.findViewById(R.id.img1);
+//        New=(ImageView)view.findViewById(R.id.img2);
+        chifon=(ImageView)view.findViewById(R.id.chifon);
+        arena=(ImageView)view.findViewById(R.id.arena);
+        mohagni=(ImageView)view.findViewById(R.id.mohagni);
         recyclerView=(RecyclerView)view.findViewById(R.id.model_recyclerView);
         recyclerView2=(RecyclerView)view.findViewById(R.id.model_recyclerView2);
         new_a=(TextView)view.findViewById(R.id.new_a);
@@ -99,11 +102,23 @@ public class Home extends Fragment implements BaseSliderView.OnSliderClickListen
                 startActivity(myIntent);
             }
         });
-        Glide.with(getActivity()).load(saleimage).into(New);
-        Glide.with(this).load(bajiImage).into(sale);
-        GetAllProducts();
-        GetAllProducts2();
-        sale.setOnClickListener(new View.OnClickListener() {
+        chifon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),All_Products.class);
+                intent.putExtra("id","85");
+                startActivity(intent);
+            }
+        });
+        mohagni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(),All_Products.class);
+                intent.putExtra("id","7");
+                startActivity(intent);
+            }
+        });
+        arena.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(),All_Products.class);
@@ -111,14 +126,26 @@ public class Home extends Fragment implements BaseSliderView.OnSliderClickListen
                 startActivity(intent);
             }
         });
-        New.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {//60
-                Intent intent=new Intent(getActivity(),All_Products.class);
-                intent.putExtra("id","6");
-                startActivity(intent);
-            }
-        });
+//        Glide.with(getActivity()).load(saleimage).into(New);
+//        Glide.with(this).load(bajiImage).into(sale);
+        GetAllProducts();
+        GetAllProducts2();
+//        sale.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent=new Intent(getActivity(),All_Products.class);
+//                intent.putExtra("id","5");
+//                startActivity(intent);
+//            }
+//        });
+//        New.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {//60
+//                Intent intent=new Intent(getActivity(),All_Products.class);
+//                intent.putExtra("id","6");
+//                startActivity(intent);
+//            }
+//        });
         AddImagesUrlOnline();
         return view;
     }

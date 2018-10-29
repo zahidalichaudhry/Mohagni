@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#b49f53</color>
+    <color name="colorPrimary">#b39e53</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#b49f53</color>
 
@@ -32,6 +32,6 @@
     <color name="LightGrey">#E6E6FA</color>
     <color name="green">#a7e609</color>
     <color name="red">#e60935</color>
-    <color name="brow_j">#b5a053</color>
-    <color name="Mohagni_back">#4c4c4c</color>
+    <color name="brow_j">#b9a762</color>
+    <color name="Mohagni_back">#5d5d5d</color>
 </resources>

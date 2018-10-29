@@ -8,6 +8,7 @@
         android:layout_height="match_parent"
         android:layout_width="wrap_content"
         android:layout_gravity="center"
+        android:layout_margin="5dp"
         android:elevation="3dp"
         android:padding="4dp">
         <LinearLayout
@@ -17,7 +18,7 @@
             <TextView
                 android:id="@+id/name"
                 android:layout_width="match_parent"
-                android:layout_height="80dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:fontFamily="@font/gotham_book"
@@ -29,7 +30,7 @@
             <View
                 android:layout_width="match_parent"
                 android:background="@color/jaqard"
-                android:layout_height="5dp"/>
+                android:layout_height="2dp"/>
         </LinearLayout>
 
 </android.support.v7.widget.CardView>
