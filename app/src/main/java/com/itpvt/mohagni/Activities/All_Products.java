@@ -2,6 +2,7 @@ package com.itpvt.mohagni.Activities;
 
 import android.app.ProgressDialog;
 import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -123,8 +124,39 @@ public class All_Products extends AppCompatActivity {
         id = intent.getStringExtra("id");
         GetAllProducts();
 
+        FloatingActionButton facebook=(FloatingActionButton)findViewById(R.id.facebook);
+        facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Uri uri = Uri.parse("fb-messenger://user/");
+//                uri = ContentUris.withAppendedId(uri, Long.parseLong("rdtex2016"));
+//                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+
+//                Uri uri = Uri.parse("fb-messenger://user/");
+//
+//                uri = ContentUris.withAppendedId(uri,Long.valueOf("rdtex2016"));
+//                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+//                startActivity(intent);
+                Intent facebookIntent = openFacebook(All_Products.this);
+                startActivity(facebookIntent);
+            }
+        });
 
 
+
+    }
+    public static Intent openFacebook(Context context) {
+
+        try {
+            context.getPackageManager()
+                    .getPackageInfo("com.facebook.katana", 0);
+            return new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("fb://page/1725972814353758"));
+        } catch (Exception e){
+
+            return new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://www.facebook.com/rdtex2016/"));
+        }
 
 
     }

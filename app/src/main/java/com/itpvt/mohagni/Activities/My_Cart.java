@@ -122,6 +122,38 @@ whatsapp.setOnClickListener(new View.OnClickListener() {
         }else {
             GettingCArt();
         }
+        FloatingActionButton facebook=(FloatingActionButton)findViewById(R.id.facebook);
+        facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Uri uri = Uri.parse("fb-messenger://user/");
+//                uri = ContentUris.withAppendedId(uri, Long.parseLong("rdtex2016"));
+//                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+
+//                Uri uri = Uri.parse("fb-messenger://user/");
+//
+//                uri = ContentUris.withAppendedId(uri,Long.valueOf("rdtex2016"));
+//                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+//                startActivity(intent);
+                Intent facebookIntent = openFacebook(My_Cart.this);
+                startActivity(facebookIntent);
+            }
+        });
+    }
+    public static Intent openFacebook(Context context) {
+
+        try {
+            context.getPackageManager()
+                    .getPackageInfo("com.facebook.katana", 0);
+            return new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("fb://page/1725972814353758"));
+        } catch (Exception e){
+
+            return new Intent(Intent.ACTION_VIEW,
+                    Uri.parse("https://www.facebook.com/rdtex2016/"));
+        }
+
+
     }
     private void GettingCArt() {
         loading = ProgressDialog.show(My_Cart.this, "Loading...", "Please wait...", false, false);
