@@ -45,7 +45,7 @@ import java.util.Map;
  */
 public class Home extends Fragment implements BaseSliderView.OnSliderClickListener {
     SliderLayout sliderLayout ;
-    static String path0;
+  //  static String path0;
     LinearLayout footer;
     String id;
     ArrayList<All_product_pojo> arrayList=new ArrayList<>();
@@ -59,10 +59,11 @@ public class Home extends Fragment implements BaseSliderView.OnSliderClickListen
     private ProgressDialog loading;
 
     String menimage,womenimage,saleimage,bajiImage;
-    static String path1,path2;
+   // static String path1,path2;
     ImageView men,women,chifon,arena,mohagni;
     TextView new_a,new_a2,new_tx,sale_tx;
-    HashMap<String, String> HashMapForURL ;
+    HashMap<String, Integer> HashMapForURL ;
+    int[] images={  R.drawable.ba, R.drawable.ban, R.drawable.bann};
     public Home() {
         // Required empty public constructor
     }
@@ -75,9 +76,9 @@ public class Home extends Fragment implements BaseSliderView.OnSliderClickListen
         final View view = inflater.inflate(R.layout.fragment_home2, container, false);
 
         sliderLayout = (SliderLayout) view.findViewById(R.id.slider);
-        path0 = Config.BANNER1;
-        path1= Config.BANNER2;
-        path2=Config.BANNER3;
+        //path0 = Config.BANNER1;
+       // path1= Config.BANNER2;
+      //  path2=Config.BANNER3;
         saleimage=Config.HOMW_SALE;
         bajiImage  = Config.HOME_FOOTWARE;
 //        sale=(ImageView)view.findViewById(R.id.img1);
@@ -93,15 +94,15 @@ public class Home extends Fragment implements BaseSliderView.OnSliderClickListen
         sale_tx=(TextView)view.findViewById(R.id.sale_tx);
         recyclerView.setHasFixedSize(true);
         recyclerView2.setHasFixedSize(true);
-        footer=(LinearLayout)view.findViewById(R.id.footer);
+       // footer=(LinearLayout)view.findViewById(R.id.footer);
         new_a=(TextView)view.findViewById(R.id.new_a);
-        footer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://itpvt.net/"));
-                startActivity(myIntent);
-            }
-        });
+//        footer.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://itpvt.net/"));
+//                startActivity(myIntent);
+//            }
+//        });
         chifon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -250,11 +251,11 @@ public class Home extends Fragment implements BaseSliderView.OnSliderClickListen
 
     {
 
-        HashMapForURL = new HashMap<String, String>();
+        HashMapForURL = new HashMap<String, Integer>();
 
-        HashMapForURL.put(" ", path0);
-        HashMapForURL.put("   ", path2);
-        HashMapForURL.put("  ", path1);
+        HashMapForURL.put(" ", R.drawable.ba);
+        HashMapForURL.put("   ", R.drawable.newin);
+        HashMapForURL.put("  ", R.drawable.bann);
 
         callSlider();
     }

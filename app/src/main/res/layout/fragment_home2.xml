@@ -3,12 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fafafa"
+
     tools:context="com.itpvt.mohagni.Fragements.Home">
+
+
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -16,11 +21,7 @@
             android:gravity="center"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center"
-                android:orientation="vertical">
+
 
                 <com.daimajia.slider.library.SliderLayout
                     android:id="@+id/slider"
@@ -31,35 +32,11 @@
 
                 </com.daimajia.slider.library.SliderLayout>
 
-                <ImageView
-                    android:id="@+id/mohagni"
-                    android:layout_width="504dp"
-                    android:layout_height="215dp"
-                    android:src="@drawable/mohagni" />
-
-                <!--<LinearLayout-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="200dp"-->
-                    <!--android:weightSum="2"-->
-                    <!--android:gravity="center"-->
-                    <!--android:orientation="horizontal">-->
-
-                    <!--<ImageView-->
-                        <!--android:id="@+id/img2"-->
-                        <!--android:layout_weight="1"-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_height="match_parent"-->
-                 <!--/>-->
-                  <!--&lt;!&ndash;//  android:background="@drawable/areena"&ndash;&gt;-->
-                    <!--<ImageView-->
-                        <!--android:id="@+id/img1"-->
-                        <!--android:layout_width="match_parent"-->
-                        <!--android:layout_weight="1"-->
-                        <!--android:layout_height="match_parent"-->
-                        <!--android:layout_gravity="center"-->
-                     <!--/>-->
-                    <!--&lt;!&ndash;android:background="@drawable/florence&ndash;&gt;-->
-                <!--</LinearLayout>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/new_tx"
@@ -81,7 +58,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -97,18 +74,24 @@
                         app:layoutManager="android.support.v7.widget.LinearLayoutManager">
 
                     </android.support.v7.widget.RecyclerView>
-                </LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/chifon"
-        android:layout_width="433dp"
-        android:layout_height="218dp"
-        android:layout_weight="1"
-        android:src="@drawable/chiffon" />
-</LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="PRODUCTS"
+                    android:textColor="@color/red"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/gotham_book"
+                    android:textSize="20sp" />
+                <ImageView
+                    android:id="@+id/mohagni"
+                    android:layout_width="504dp"
+                    android:layout_height="190dp"
+
+                    android:layout_below="@+id/model_recyclerView"
+                    android:src="@drawable/mohagni" />
                 <TextView
                     android:id="@+id/sale_tx"
                     android:layout_width="match_parent"
@@ -130,7 +113,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal">
 
@@ -149,14 +132,60 @@
 
                 </LinearLayout>
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="CHIFFON"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/gotham_book"
+                    android:textSize="20sp" />
+                <ImageView
+                    android:id="@+id/chifon"
+                    android:layout_width="433dp"
+                    android:layout_height="190dp"
+
+
+                    android:src="@drawable/chiffon" />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ARENA"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/gotham_book"
+                    android:textSize="20sp" />
+
                 <ImageView
                     android:id="@+id/arena"
                     android:layout_width="459dp"
-                    android:layout_height="203dp"
-                    android:src="@drawable/arena" />
+                    android:layout_height="190dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/arenaa" />
 
-                <include layout="@layout/footer2"></include>
+
+
+
+
+
+
+</LinearLayout>
+
+                <include layout="@layout/footer"/>
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
-</LinearLayout>
+    </LinearLayout>
+

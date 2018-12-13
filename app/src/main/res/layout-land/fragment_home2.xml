@@ -1,8 +1,10 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fafafa"
     tools:context="com.itpvt.mohagni.Fragements.Home">
 
     <ScrollView
@@ -19,36 +21,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                 android:orientation="vertical">
+                android:orientation="vertical">
 
                 <com.daimajia.slider.library.SliderLayout
                     android:id="@+id/slider"
                     android:layout_width="match_parent"
-                    android:layout_height="350dp"
+                    android:layout_height="200dp"
                     android:layout_marginBottom="10dp"
-                    android:layout_marginTop="5dp" />
+                    android:layout_marginTop="5dp" >
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="300dp"
-                    android:gravity="center"
-                    android:weightSum="2"
-                    android:orientation="horizontal">
+                </com.daimajia.slider.library.SliderLayout>
 
-                    <ImageView
-                        android:id="@+id/img2"
-                        android:layout_width="match_parent"
-                        android:layout_weight="1"
-                        android:layout_height="match_parent" />
 
-                    <ImageView
-                        android:id="@+id/img1"
-                        android:layout_width="match_parent"
-                        android:layout_weight="1"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center" />
-
-                </LinearLayout>
 
                 <TextView
                     android:id="@+id/new_tx"
@@ -57,8 +41,8 @@
                     android:gravity="center"
                     android:text="NEW ARRIVAL"
                     android:textColor="@color/red"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/gotham_book"/>
+                    android:fontFamily="@font/gotham_book"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/new_a"
@@ -66,8 +50,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="Please Wait......."
-                    android:textColor="@color/Mohagni_back"
-                    android:fontFamily="@font/gotham_book"/>
+                    android:textColor="@color/Mohagni_back" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -80,12 +63,22 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
-                        android:layout_marginTop="3dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
                         android:orientation="horizontal"
                         android:scrollbars="horizontal"
-                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"></android.support.v7.widget.RecyclerView>
-                </LinearLayout>
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager">
 
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+                <ImageView
+                    android:id="@+id/mohagni"
+                    android:layout_width="504dp"
+                    android:layout_height="150dp"
+
+                    android:layout_below="@+id/model_recyclerView"
+                    android:src="@drawable/mohagni" />
                 <TextView
                     android:id="@+id/sale_tx"
                     android:layout_width="match_parent"
@@ -101,9 +94,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:fontFamily="@font/gotham_book"
                     android:text="Please Wait......."
-                    android:textColor="@color/Mohagni_back"
-                    android:fontFamily="@font/gotham_book" />
+                    android:textColor="@color/Mohagni_back" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -116,12 +109,55 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="2dp"
-                        android:layout_marginTop="3dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
                         android:orientation="horizontal"
                         android:scrollbars="horizontal"
-                        app:layoutManager="android.support.v7.widget.LinearLayoutManager"></android.support.v7.widget.RecyclerView>
+                        app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+
+                    </android.support.v7.widget.RecyclerView>
 
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+
+                </LinearLayout>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="CHIFFON"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/gotham_book"
+                    android:textSize="20sp" />
+                <ImageView
+                    android:id="@+id/chifon"
+                    android:layout_width="433dp"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+
+                    android:src="@drawable/chiffon" />
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ARENA"
+                    android:textColor="@color/red"
+                    android:fontFamily="@font/gotham_book"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/arena"
+                    android:layout_width="459dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/arenaa" />
 
                 <include layout="@layout/footer2"></include>
             </LinearLayout>

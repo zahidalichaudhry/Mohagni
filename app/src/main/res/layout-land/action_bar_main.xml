@@ -20,7 +20,7 @@
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="62dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -44,7 +44,7 @@
                         android:fontFamily="@font/gotham_book"
                         android:gravity="center"
                         android:text="MOHAGNI"
-                        android:textColor="#000"
+                        android:textColor="@color/Mohagni_back"
                         android:textSize="22sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -113,7 +113,6 @@
         android:src="@drawable/cart"
         app:background="@drawable/cart"
         app:backgroundTint="@color/white"
-
         app:layout_anchor="@+id/appBarLayout"
         app:layout_anchorGravity="right|top" />
 
@@ -141,5 +140,4 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/onlyf" />
-
 </android.support.design.widget.CoordinatorLayout>

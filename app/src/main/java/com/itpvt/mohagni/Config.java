@@ -52,7 +52,7 @@ public static final String SHARED_PREF_CART = "cart";
 //    public static final String URL_REMOVE_ITEM_CART="http://forecast.com.pk/remove_item_from_cart.php";
 //    public static final String URL_REMOVE_HD_IMAGE="http://forecast.com.pk/all_images.php";
 //    ///////////////////////////////LOCal//////////////////////
-    public static final String URL_CREATE_ORDER="http://www.mohagni.com/create_order.php";
+    public static final String URL_CREATE_ORDER="http://mohagni.com/create_order.php";
     public static final String FIRSTNAME= "firstname";
     public static final String LASTNAME = "lastname";
     public static final String CART_ID = "cart_id";
@@ -66,16 +66,16 @@ public static final String SHARED_PREF_CART = "cart";
     public static final String PHONE = "telephone";
 
     ////////GETTING PRODUCT //////
-    public static final String URL_All_Categories= "http://www.mohagni.com/getCategories.php";
-    public static final String URL_Sub_Categories= "http://www.mohagni.com/getSubCategories.php";
-    public static final String URL_ALL_PRODUCTS= "http://www.mohagni.com/getAllProductsByCategories.php";
+    public static final String URL_All_Categories= "http://mohagni.com/getCategories.php";
+    public static final String URL_Sub_Categories= "http://mohagni.com/getSubCategories.php";
+    public static final String URL_ALL_PRODUCTS= "http://mohagni.com/getAllProductsByCategories.php";
     public static final String URL_PRODUCT_DETAILS= "http://mohagni.com/get_product_details.php";
     public static final String URL_PRODUCT_DETAILS_CONFIGURE= "http://mohagni.com/congig_details_prooo_demo.php";
-    public static final String URL_BASE_WEBVIEW= "http://www.mohagni.com/index.php";
-    public static final String URL_INVENTORY= "http://www.mohagni.com/inventory.php";
+    public static final String URL_BASE_WEBVIEW= "http://mohagni.com/index.php";
+    public static final String URL_INVENTORY= "http://mohagni.com/inventory.php";
     //////////SHOPPING CART APIS////////////////
-    public static final String URL_ADD_TO_CART="http://www.mohagni.com/add_to_cart.php";
-    public static final String URL_SHOW_CART="http://www.mohagni.com/getting_quote_items.php";
-    public static final String URL_REMOVE_ITEM_CART="http://www.mohagni.com/remove_item_from_cart.php";
-    public static final String URL_REMOVE_HD_IMAGE="http://www.mohagni.com/all_images.php";
+    public static final String URL_ADD_TO_CART="http://mohagni.com/add_to_cart.php";
+    public static final String URL_SHOW_CART="http://mohagni.com/getting_quote_items.php";
+    public static final String URL_REMOVE_ITEM_CART="http://mohagni.com/remove_item_from_cart.php";
+    public static final String URL_REMOVE_HD_IMAGE="http://mohagni.com/all_images.php";
 }

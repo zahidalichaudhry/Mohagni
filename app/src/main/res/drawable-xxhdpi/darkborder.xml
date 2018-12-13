@@ -3,8 +3,8 @@
     <solid android:color="@color/white" />
     <!--border color and border width-->
     <stroke
-        android:width="3dp"
-        android:color="@color/brow_j" />
+        android:width="1dp"
+        android:color="#000" />
     <corners
         android:bottomLeftRadius="10dp"
         android:bottomRightRadius="10dp"

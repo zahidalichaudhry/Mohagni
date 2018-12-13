@@ -27,6 +27,7 @@
 
         </include>
 
+
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/bag"
             android:layout_width="wrap_content"
@@ -35,13 +36,12 @@
             android:layout_marginEnd="8dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/cart"
-            app:backgroundTint="@color/white"
             android:src="@drawable/cart"
+            app:backgroundTint="@color/white"
             app:layout_anchorGravity="left|bottom"
             app:layout_constraintBottom_toBottomOf="@+id/include5"
             app:layout_constraintEnd_toEndOf="@+id/include5"
             app:layout_constraintTop_toTopOf="parent" />
-
 
         <TextView
             android:id="@+id/p_name"
@@ -56,7 +56,7 @@
             android:padding="5dp"
             android:textColor="@color/jumbo"
             android:textColorHint="@color/Mohagni_back"
-            android:textSize="20dp"
+            android:textSize="22dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -82,9 +82,11 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:fontFamily="@font/gotham_book"
             android:gravity="center_vertical"
             android:text="Size"
+            android:textSize="22dp"
             android:textColor="@color/Mohagni_back"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -96,6 +98,7 @@
             android:layout_marginStart="8dp"
             android:fontFamily="@font/gotham_book"
             android:gravity="center"
+            android:textSize="20dp"
             android:textAlignment="center"
             app:layout_constraintStart_toEndOf="@+id/textView9"
             app:layout_constraintTop_toTopOf="@+id/textView9">
@@ -113,6 +116,7 @@
             android:fontFamily="@font/gotham_book"
             android:gravity="center_vertical"
             android:text="Color"
+            android:textSize="22dp"
             android:textColor="@color/Mohagni_back"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
@@ -128,6 +132,7 @@
             android:gravity="center"
             android:textAlignment="center"
             android:textColor="#0000FF"
+            android:textSize="20dp"
             app:layout_constraintStart_toEndOf="@+id/textView10"
             app:layout_constraintTop_toTopOf="@+id/textView10">
 
@@ -135,19 +140,8 @@
 
 
         <TextView
-            android:id="@+id/tv_qnty"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:fontFamily="@font/gotham_book"
-            android:gravity="left"
-            android:textColor="@color/jumbo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/spinner_color"
-            app:layout_constraintTop_toTopOf="@+id/textView10" />
 
-        <EditText
-            android:id="@+id/ed_qty"
+            android:id="@+id/textView13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
@@ -155,13 +149,34 @@
             android:layout_marginTop="8dp"
             android:fontFamily="@font/gotham_book"
             android:gravity="left"
+            android:text="Quantity:"
+            android:textColor="@color/Mohagni_back"
+            android:textSize="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_disprice" />
+
+
+        <EditText
+            android:id="@+id/ed_qty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/darkborder"
+            android:fontFamily="@font/gotham_book"
+            android:gravity="left"
             android:hint="1"
             android:inputType="number"
             android:padding="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
             android:text="1"
+            android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/spinner_size"
-            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView13" />
 
 
         <TextView
@@ -174,7 +189,7 @@
             android:gravity="center"
             android:text="Original PKR:"
             android:textColor="@color/Mohagni_back"
-            android:textSize="15sp"
+            android:textSize="22sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/p_image" />
 
@@ -182,13 +197,16 @@
             android:id="@+id/tv_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="12dp"
             android:layout_marginTop="8dp"
+            android:background="@drawable/darkborder"
             android:fontFamily="@font/gotham_book"
             android:hint="Price"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
             android:textColor="@color/red"
             android:textColorHint="@color/red"
-            android:textSize="14sp"
+            android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/textView11"
             app:layout_constraintTop_toBottomOf="@+id/p_image" />
 
@@ -203,7 +221,7 @@
             android:gravity="center"
             android:text="Discounted PKR:"
             android:textColor="@color/Mohagni_back"
-            android:textSize="15sp"
+            android:textSize="22sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -211,28 +229,51 @@
             android:id="@+id/tv_disprice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="124dp"
+            android:background="@drawable/darkborder"
             android:fontFamily="@font/gotham_book"
             android:hint="N/A"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
             android:textColor="@color/Mohagni_back"
             android:textColorHint="@color/Mohagni_back"
-            android:textSize="14sp"
-            app:layout_constraintStart_toEndOf="@+id/textView12"
+            android:textSize="20sp"
+            app:layout_constraintStart_toEndOf="@+id/spinner_color"
             app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+        <TextView
+            android:id="@id/tv_qnty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/gotham_book"
+            android:gravity="left"
+            android:text="sdjksjdksd"
+            android:textColor="@color/Mohagni_back"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.925"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView11"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints" />
 
 
         <Button
             android:id="@+id/buy"
-            android:layout_width="0dp"
+            android:layout_width="340dp"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/blackborder"
             android:fontFamily="@font/gotham_book"
             android:text="Add To Cart"
-            android:textColor="@color/white"
+            android:textColor="#fff"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.385"

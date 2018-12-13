@@ -118,6 +118,7 @@
             android:layout_weight="1"
             android:id="@+id/tv_qnty"
             android:gravity="left"
+            android:text="Quantity"
             android:fontFamily="@font/gotham_book"
             android:textColor="@color/jumbo" />
 

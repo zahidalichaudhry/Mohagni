@@ -35,6 +35,7 @@ public class Home_Categories extends AppCompatActivity implements NavigationView
     ViewPager viewPager;
     TabLayout tabLayout;
     Home_Pager_Adapter adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

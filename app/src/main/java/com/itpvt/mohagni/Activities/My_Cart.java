@@ -184,7 +184,7 @@ whatsapp.setOnClickListener(new View.OnClickListener() {
                         grand2 = String.valueOf(d);
                         adapter = new Recyler_Cart_Item(arrayList, My_Cart.this, Cart_no);
                         recyclerView.setAdapter(adapter);
-                        all_total.setText(grand2);
+                        all_total.setText(grand2.replace(".0"," Rs"));
                     } catch (JSONException e) {
                         e.printStackTrace();
                         loading.dismiss();
